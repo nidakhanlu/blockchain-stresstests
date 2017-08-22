@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+
+m=0
+      
+  filename="10000nodelaynowifi.txt"
+while read -r line
+do
+    txhash="$line"
+    export txhash
+     ((m+=1))
+             
+               j=$(source test50002)
+               echo $j>>timestamp10000nowifi.txt
+               echo $m>>10000nowifi.txt
+done < "10000nodelaynowifi.txt"
+python plottest.py
+
+ 
+
+
+

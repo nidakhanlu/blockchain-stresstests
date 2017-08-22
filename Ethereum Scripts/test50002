@@ -1,0 +1,14 @@
+#!/bin/bash 
+hash=$txhash
+#echo $hash         
+geth attach ipc:/home/testnet/.ethereum/testnet/geth.ipc << EOF | grep "RESULT:" | sed "s/RESULT: //"
+var blocknumber = web3.eth.getTransaction("$hash").blockNumber;
+var d = web3.eth.getBlock(blocknumber).timestamp;
+#console.log("RESULT: " + d);
+console.log("RESULT: " + d);
+EOF
+
+
+
+
+

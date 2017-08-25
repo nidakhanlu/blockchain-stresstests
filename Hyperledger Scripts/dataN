@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 N=10000
 n=0
      for((i=1;i<=$N;i++));

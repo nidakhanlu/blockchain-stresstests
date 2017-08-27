@@ -1,0 +1,3 @@
+#!/bin/bash
+FILE="timestamp10000nodelay.txt"
+grep -o "undefined" $FILE | wc -l

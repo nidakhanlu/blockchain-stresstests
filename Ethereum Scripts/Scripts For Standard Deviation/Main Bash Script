@@ -1,0 +1,12 @@
+#!/bin/bash
+#./networktimeout.sh &
+./dataN0.sh &
+./dataN1.sh &
+./dataN2.sh &
+./dataN3.sh &
+./dataN4.sh &
+./dataN5.sh &
+./dataN6.sh &
+./dataN7.sh &
+./dataN8.sh &
+./dataN9.sh &

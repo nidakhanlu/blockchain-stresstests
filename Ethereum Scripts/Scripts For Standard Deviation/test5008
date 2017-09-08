@@ -1,0 +1,32 @@
+#!/bin/bash  
+gas=$c  
+#echo $gas      
+geth attach ipc:/home/testnet/.ethereum/testnet/geth.ipc << EOF | grep "RESULT:" | sed "s/RESULT: //"
+primary = web3.eth.accounts[8];
+#console.log("RESULT: Coinbase:" + primary);
+#var balance1 = web3.fromWei(eth.getBalance(primary), "ether");
+#console.log("RESULT: balance1=" + balance1);
+#com=eth.getCompilers();
+#console.log("RESULT:compiler="+ com);
+var address= '0x3d04303126cd6e75324825455685b028401e0ec2';  
+#console.log("RESULT: contract address: " + address);
+var ABI=[{"constant":false,"inputs":[{"name":"projectID","type":"uint256"},{"name":"amount","type":"uint256"}],"name":"donate","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"zakaahCoins","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"charityID","type":"uint256"}],"name":"charityProjects","outputs":[{"name":"listProjects","type":"uint256[]"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"projectID","type":"uint256"},{"name":"impact","type":"bytes32"}],"name":"impact","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"numCharities","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"projectID","type":"uint256"}],"name":"transProjects","outputs":[{"name":"transactionList","type":"uint256[]"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"donorTrans","outputs":[{"name":"transactionID","type":"uint256[]"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"name","type":"bytes32"}],"name":"newCharity","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"projectID","type":"uint256"}],"name":"donorsProjects","outputs":[{"name":"listDonors","type":"uint256[]"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"numProjects","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"charityID","type":"uint256"}],"name":"charityRequests","outputs":[{"name":"requests","type":"uint256[]"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"projectID","type":"uint256"}],"name":"projectData","outputs":[{"name":"name","type":"string"},{"name":"charityID","type":"uint256"},{"name":"fundingGoal","type":"uint256"},{"name":"amount","type":"uint256"},{"name":"cash","type":"uint256"},{"name":"addr","type":"address"},{"name":"category","type":"string"},{"name":"impact","type":"string"},{"name":"pID","type":"uint256"},{"name":"time","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"numDonors","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"numTransactions","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"x","type":"bytes32"}],"name":"bytes32ToString","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"transactions","outputs":[{"name":"sender","type":"address"},{"name":"receiverID","type":"uint256"},{"name":"ID","type":"uint256"},{"name":"amount","type":"uint256"},{"name":"time","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"donorData","outputs":[{"name":"name","type":"string"},{"name":"addr","type":"address"},{"name":"donorID","type":"uint256"},{"name":"amount","type":"uint256"},{"name":"time","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"name","type":"bytes32"},{"name":"charityID","type":"uint256"},{"name":"goal","type":"uint256"},{"name":"categoryID","type":"uint256"}],"name":"newProject","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"charityID","type":"uint256"}],"name":"charityData","outputs":[{"name":"name","type":"string"},{"name":"addr","type":"address"},{"name":"ID","type":"uint256"},{"name":"time","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"projectID","type":"uint256"}],"name":"getImpact","outputs":[{"name":"impact","type":"string"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"name","type":"bytes32"}],"name":"newDonor","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"categoryID","type":"uint256"}],"name":"getCategory","outputs":[{"name":"category","type":"uint256[]"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"buyCoins","outputs":[],"payable":false,"type":"function"},{"inputs":[],"payable":false,"type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"name":"done","type":"bool"}],"name":"Contribute","type":"event"}];
+var MyContract = web3.eth.contract(ABI);
+#console.log("RESULT: mycontract "+ MyContract);
+var MyContractInstance = MyContract.at(address);
+#console.log("RESULT: mycontractins "+ MyContractInstance);
+#source data.sh;
+txhash=MyContractInstance.newDonor("Saad", {from: primary, gas:"$gas"});
+console.log("RESULT: "+txhash);
+#txhash=MyContractInstance.donorData( {from: primary, gas:3000000});
+#console.log("RESULT: "+txhash);
+#var blocknumber = web3.eth.getTransaction(txhash).blockNumber;
+#var d = web3.eth.getBlock(blocknumber).timestamp;
+#console.log("RESULT: " + d);
+#console.log("RESULT: " + d);
+
+
+
+EOF
+
+

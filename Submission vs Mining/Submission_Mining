@@ -1,0 +1,80 @@
+a) Start of Submission - end of submission
+b) Timestamp of first and last mined transaction
+c) Throughput
+
+10 Samples Used. 6 consisting of 1000 transactions and 4 consisting of 10000 transactions:
+
+-------------Test A--------------
+
+1.a) Son Sep 3 23:21:37 CEST 2017
+     Son Sep 3 23:26:33 CEST 2017 -----total: 4 minutes 56 seconds = 296 seconds
+  b) 1504474269 --Sunday September 03, 2017 23:31:09 (pm) CEST
+     1504474401 -- Sunday September 03, 2017 23:33:21 (pm) CEST
+                -- total: 2 minutes 12 seconds = 132 seconds
+  c) 1000/1000 mined transactions
+
+2.a) Son Sep 3 23:37:16 CEST 2017
+     Son Sep 3 23:46:02 CEST 2017 -----total: 8 minutes 46 seconds = 526 seconds
+  b) 1504475228 --Sunday September 03, 2017 23:47:08 (pm) CEST
+     1504475685 --Sunday September 03, 2017 23:54:45 (pm) CEST
+                -- total: 7 minutes 37 seconds = 457 seconds
+  c) 1000/1000 mined transactions
+
+3.a) Son Sep 3 23:55:20 CEST 2017
+     Mon Sep 4 00:00:22 CEST 2017 ----total: 5 minutes 2 seconds = 302 seconds
+  b) 1504476060 --Monday September 04, 2017 00:01:00 (am) CEST
+     1504476347 --Monday September 04, 2017 00:05:47 (am) CEST
+                --total: 4 minutes 47 seconds = 287 seconds
+  c) 1000/1000 mined transactions
+
+4.a) Mon Sep 4 00:09:45 CEST 2017
+     Mon Sep 4 00:15:25 CEST 2017 ---total: 5 minutes 40 seconds = 340 seconds
+  b) 1504476978 --Monday September 04, 2017 00:16:18 (am) CEST
+     1504477404 --Monday September 04, 2017 00:23:24 (am) CEST
+                --total: 7 minutes 6 seconds = 426 seconds
+  c) 1000/1000 mined transactions
+
+5.a) Mon Sep 4 00:23:48 CEST 2017
+     Mon Sep 4 00:29:42 CEST 2017 ---total: 5 minutes 54 seconds = 354 seconds
+  b) 1504477876 --Monday September 04, 2017 00:31:16 (am) CEST
+     1504478166 --Monday September 04, 2017 00:36:06 (am) CEST
+                --total: 4 minutes 50 seconds = 290 seconds
+  c) 963/1000 mined transactions
+
+6.a) Mon Sep 4 01:06:12 CEST 2017
+     Mon Sep 4 01:11:40 CEST 2017 ---total: 5 minutes 28 seconds = 328 seconds
+  b) 1504480559 --Monday September 04, 2017 01:15:59 (am) CEST
+     1504480735 --Monday September 04, 2017 01:18:55 (am) CEST
+                --total: 2 minutes 56 seconds = 176 seconds
+  c) 1000/1000 mined tranactions
+
+Total Submission Time for 6: 2146 seconds
+Average Submission Time: 357.67 seconds
+Total Mining TIme for 6:1768 seconds
+Average Mining TIme: 294.67 seconds
+------------Test B--------------
+
+1.a) Die Sep 5 01:42:26 CEST 2017
+     Die Sep 5 02:53:06 CEST 2017 --total: 1 hour 10 minutes 40 seconds = 4240 seconds
+  b) 1504572884 --Tuesday September 05, 2017 02:54:44 (am) CEST
+     1504583503 --Tuesday September 05, 2017 05:51:43 (am) CEST
+               --Total: 2 hours 56 minutes 59 seconds = 10619 seconds
+  c) 9472/10000 mined transactions
+
+2.a) Die Sep 5 07:59:34 CEST 2017
+     Die Sep 5 09:08:58 CEST 2017
+  b) 1504595387
+     1504616261
+  c) 7038/10000 mined transactions
+
+3.a) Die Sep 5 10:06:22 CEST 2017
+     Die Sep 5 11:12:59 CEST 2017
+  b) 1504602852
+     1504604681
+  c) 4080/10000 mined transactions
+
+4.a) Die Sep 5 13:15:57 CEST 2017
+     Die Sep 5 14:35:38 CEST 2017
+  b) 1504615147
+     1504619671
+  c) 5520/10000 mined transactions

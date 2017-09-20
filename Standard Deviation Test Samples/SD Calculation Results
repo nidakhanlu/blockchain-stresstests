@@ -1,0 +1,142 @@
+1.Synchronous 1000 Txns:
+
+Standard Deviation:
+0.27704730557
+Mean:
+0.678066666667
+z critical:
+1.95996398454
+Margin of Error:
+0.140202704838
+Confidence interval:
+0.537863961828
+0.818269371505
+
+
+2.Asynchronous 1000 Txns:
+
+Standard Deviation:
+0.0242162873172
+Mean:
+0.949
+z critical:
+1.95996398454
+Margin of Error:
+0.0122549070673
+Confidence interval:
+0.936745092933
+0.961254907067
+
+3.Offline 1000 Txns:
+
+Standard Deviation:
+0.0897232782876
+Mean:
+0.964866666667
+z critical:
+1.95996398454
+Margin of Error:
+0.0454054092927
+Confidence interval:
+0.919461257374
+1.01027207596
+
+4.Synchronous 10000 Txns:
+
+Standard Deviation:
+0.193880444261
+Mean:
+0.6302
+z critical:
+1.95996398454
+Margin of Error:
+0.189999344029
+Confidence interval:
+0.440200655971
+0.820199344029
+
+5. Asynchronous 10000 Txns:
+
+Standard Deviation:
+0.0307842356843
+Mean:
+0.928825
+z critical:
+1.95996398454
+Margin of Error:
+0.0301679966164
+Confidence interval:
+0.898657003384
+0.958992996616
+
+6. Offline 10000 Txns:
+
+Standard Deviation:
+0.230477786348
+Mean:
+0.65275
+z critical:
+1.95996398454
+Margin of Error:
+0.22586408024
+Confidence interval:
+0.42688591976
+0.87861408024
+
+7. Propose 30 sec down -30 sec up:
+
+Standard Deviation:
+0.150929078267
+Mean:
+0.6476
+z critical:
+1.95996398454
+Margin of Error:
+0.147907778812
+Confidence interval:
+0.499692221188
+0.795507778812
+
+8. Propose 10 sec down 80 sec up:
+
+Standard Deviation:
+0.342496105817
+Mean:
+0.530375
+z critical:
+1.95996398454
+Margin of Error:
+0.335640016124
+Confidence interval:
+0.194734983876
+0.866015016124
+
+
+
+9. Single account 1000 Txns:
+
+Standard Deviation:
+115.349469006
+Mean:
+579.5
+z critical:
+1.95996398454
+Margin of Error:
+92.2971021022
+Confidence interval:
+487.202897898
+671.797102102
+
+10.10 accounts 1000 Txns in parallel:
+
+Standard Deviation:
+163.560895897
+Mean:
+717.166666667
+z critical:
+1.95996398454
+Margin of Error:
+130.873569151
+Confidence interval:
+586.293097515
+848.040235818
